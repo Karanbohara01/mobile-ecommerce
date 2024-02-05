@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../utils/app-constant.dart';
+
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
@@ -9,8 +11,8 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
-        title: Text('hello,Welcome to my Application!'),
+        backgroundColor: AppConstant.appMainColor,
+        title: Text(AppConstant.appMainName),
         centerTitle: true,
       ),
     );
