@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_e_comm/screens/auth-ui/splash-screen.dart';
+import 'package:flutter_application_e_comm/screens/auth-ui/sign-in-screen.dart';
 import 'package:get/get.dart';
-
-import 'screens/user-panel/main-screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const SignInScreen(),
     );
   }
 }
