@@ -37,6 +37,7 @@ dependencies:
   lottie: ^3.0.0
   get: ^4.6.6
   flutter_keyboard_visibility: ^6.0.0
+  firebase_core: ^2.25.4
 
 dev_dependencies:
   flutter_test:
