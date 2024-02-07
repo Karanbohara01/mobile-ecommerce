@@ -67,6 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '951467405762',
     projectId: 'mobile-ecommerce-53fef',
     storageBucket: 'mobile-ecommerce-53fef.appspot.com',
+    androidClientId: '951467405762-4utf1lgk3gr5oor5nsjp4f1lq3o7242v.apps.googleusercontent.com',
+    iosClientId: '951467405762-e5m9p5r94fenu351r2i1vbc2kdq7r36i.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterApplicationEComm',
   );
 
@@ -76,6 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '951467405762',
     projectId: 'mobile-ecommerce-53fef',
     storageBucket: 'mobile-ecommerce-53fef.appspot.com',
+    androidClientId: '951467405762-4utf1lgk3gr5oor5nsjp4f1lq3o7242v.apps.googleusercontent.com',
+    iosClientId: '951467405762-73a4bkbhc4ta9h5j5dmmc11s0c0eprss.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterApplicationEComm.RunnerTests',
   );
 }

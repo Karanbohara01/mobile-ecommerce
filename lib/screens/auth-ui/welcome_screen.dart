@@ -1,13 +1,17 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_e_comm/controllers/google-sign-in-controller.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../utils/app-constant.dart';
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({Key? key}) : super(key: key);
+  WelcomeScreen({Key? key}) : super(key: key);
+
+  final GoogleSignInController _googleSignInController =
+      Get.put(GoogleSignInController());
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +61,9 @@ class WelcomeScreen extends StatelessWidget {
                   "Sign in with Google",
                   style: TextStyle(color: AppConstants.textColor),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  _googleSignInController.SignInWithGoogle();
+                },
               ),
             ),
           ),
