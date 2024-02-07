@@ -20,8 +20,8 @@ import 'package:flutter/material.dart';
 class AppConstants {
   static const String appName = 'E-commerce App';
   static const String poweredBy = 'Powered By Karan Bohara';
-  static const Color primaryColor = Color(0xFFbf1b08);
-  static const Color secondaryColor = Color(0xFF981206);
+  static const Color primaryColor = Color.fromARGB(255, 237, 112, 154);
+  static const Color secondaryColor = Colors.pink;
   static const Color textColor = Color(0xFFFBF5F4);
   static const Color statusBarColor = Color(0xFFFBF5F4);
 
