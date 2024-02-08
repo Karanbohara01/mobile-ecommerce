@@ -1,16 +1,18 @@
 // ignore_for_file: file_names, prefer_const_constructors, sized_box_for_whitespace, avoid_unnecessary_containers, must_be_immutable
 
+
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:e_comm/models/product-model.dart';
-import 'package:e_comm/utils/app-constant.dart';
 import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
+import 'package:flutter_application_e_comm/screens/user-panel/product-deatils-screen.dart';
+import 'package:flutter_application_e_comm/utils/app-constant.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:image_card/image_card.dart';
 
-import 'product-deatils-screen.dart';
+import '../../models/product-model.dart';
 
 class AllSingleCategoryProductsScreen extends StatefulWidget {
   String categoryId;
@@ -27,7 +29,7 @@ class _AllSingleCategoryProductsScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppConstant.appMainColor,
+        backgroundColor: AppConstants.primaryColor,
         title: Text('Products'),
       ),
       body: FutureBuilder(

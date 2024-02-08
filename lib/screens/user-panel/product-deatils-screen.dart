@@ -1,19 +1,20 @@
 // ignore_for_file: file_names, must_be_immutable, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, prefer_interpolation_to_compose_strings, unused_local_variable, avoid_print, prefer_const_declarations, deprecated_member_use
 
+
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:e_comm/models/product-model.dart';
-import 'package:e_comm/utils/app-constant.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
+import 'package:flutter_application_e_comm/utils/app-constant.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/cart-model.dart';
-import 'cart-screen.dart';
+import '../../models/product-model.dart';
 
 class ProductDetailsScreen extends StatefulWidget {
   ProductModel productModel;
@@ -29,11 +30,11 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: AppConstant.appTextColor),
-        backgroundColor: AppConstant.appMainColor,
+        iconTheme: IconThemeData(color: AppConstants.textColor),
+        backgroundColor: AppConstants.primaryColor,
         title: Text(
           "Product Details",
-          style: TextStyle(color: AppConstant.appTextColor),
+          style: TextStyle(color: AppConstants.textColor),
         ),
         actions: [
           GestureDetector(
@@ -153,14 +154,14 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                               width: Get.width / 3.0,
                               height: Get.height / 16,
                               decoration: BoxDecoration(
-                                color: AppConstant.appScendoryColor,
+                                color: AppConstants.secondaryColor,
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               child: TextButton(
                                 child: Text(
                                   "WhatsApp",
                                   style: TextStyle(
-                                      color: AppConstant.appTextColor),
+                                      color: AppConstants.textColor),
                                 ),
                                 onPressed: () {
                                   sendMessageOnWhatsApp(
@@ -178,14 +179,14 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                               width: Get.width / 3.0,
                               height: Get.height / 16,
                               decoration: BoxDecoration(
-                                color: AppConstant.appScendoryColor,
+                                color: AppConstants.secondaryColor,
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               child: TextButton(
                                 child: Text(
                                   "Add to cart",
                                   style: TextStyle(
-                                      color: AppConstant.appTextColor),
+                                      color: AppConstants.textColor),
                                 ),
                                 onPressed: () async {
                                   // Get.to(() => SignInScreen());
