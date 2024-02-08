@@ -3,6 +3,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_e_comm/screens/auth-ui/welcome_screen.dart';
+import 'package:flutter_application_e_comm/widgets/banner-widget.dart';
 import 'package:flutter_application_e_comm/widgets/custom-drawer-widget.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -23,6 +24,17 @@ class MainScreen extends StatelessWidget {
 
       ),
       drawer: DrawerWidget(),
+      body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
+        child: Column(
+          children: [
+            SizedBox(height:Get.height/90.0,),
+            // Text("Karan")
+            // Banner
+            BannerWidget(),
+          ],
+        ),
+      ),
     );
   }
 }

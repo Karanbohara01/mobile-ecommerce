@@ -1,10 +1,7 @@
 // ignore_for_file: camel_case_types, file_names, unnecessary_overrides, unused_local_variable, avoid_print
 
-
-
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:get/get_rx/src/rx_types/rx_types.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
+import 'package:get/get.dart';
 
 class bannerController extends GetxController {
   RxList<String> bannerUrls = RxList<String>([]);
@@ -19,7 +16,7 @@ class bannerController extends GetxController {
   Future<void> fetchBannersUrls() async {
     try {
       QuerySnapshot bannersSnapshot =
-          await FirebaseFirestore.instance.collection('banners').get();
+      await FirebaseFirestore.instance.collection('banners').get();
 
       if (bannersSnapshot.docs.isNotEmpty) {
         bannerUrls.value = bannersSnapshot.docs

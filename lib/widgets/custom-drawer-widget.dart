@@ -1,16 +1,11 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, no_leading_underscores_for_local_identifiers
 
-
-
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_e_comm/utils/app-constant.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-
-import '../screens/auth-ui/sign-in-screen.dart';
 import '../screens/auth-ui/welcome_screen.dart';
 
 class DrawerWidget extends StatefulWidget {
@@ -52,7 +47,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                   radius: 22.0,
                   backgroundColor: AppConstants.primaryColor,
                   child: Text(
-                    "W",
+                    "A",
                     style: TextStyle(color: AppConstants.textColor),
                   ),
                 ),
