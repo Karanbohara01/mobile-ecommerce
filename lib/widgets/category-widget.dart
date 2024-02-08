@@ -10,6 +10,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:image_card/image_card.dart';
 
 import '../models/categories-model.dart';
+import '../screens/user-panel/single-category-products-screen.dart';
 
 class CategoriesWidget extends StatelessWidget {
   const CategoriesWidget({super.key});
