@@ -1,11 +1,16 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, avoid_unnecessary_containers, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
+
+
 
 import 'dart:async';
+
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_e_comm/screens/auth-ui/welcome_screen.dart';
 import 'package:flutter_application_e_comm/utils/app-constant.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../admin-panel/admin-main-screen.dart';

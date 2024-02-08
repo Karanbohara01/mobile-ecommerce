@@ -1,9 +1,13 @@
+
+
+
+
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_e_comm/screens/auth-ui/splash-screen.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-
-import 'package:get/get.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'firebase_options.dart';
 
