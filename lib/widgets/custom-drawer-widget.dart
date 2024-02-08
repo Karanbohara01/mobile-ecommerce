@@ -41,7 +41,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
               child: ListTile(
                 titleAlignment: ListTileTitleAlignment.center,
                 title: Text(
-                  "Waris",
+                  "A.K",
                   style: TextStyle(color: AppConstants.textColor),
                 ),
                 subtitle: Text(

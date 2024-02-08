@@ -3,6 +3,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_e_comm/screens/auth-ui/welcome_screen.dart';
+import 'package:flutter_application_e_comm/widgets/custom-drawer-widget.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
@@ -15,25 +16,13 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: AppConstants.textColor),
         backgroundColor: AppConstants.primaryColor,
-        title: Text(AppConstants.appName),
+        title: Text(AppConstants.appName,style: TextStyle(color: AppConstants.textColor),),
         centerTitle: true,
-        actions: [
-          GestureDetector(
-            onTap: () async {
-              GoogleSignIn googleSignIn = GoogleSignIn();
-              FirebaseAuth _auth = FirebaseAuth.instance;
-              await _auth.signOut();
-              await googleSignIn.signOut();
-              Get.offAll(() => WelcomeScreen());
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Icon(Icons.logout),
-            ),
-          )
-        ],
+
       ),
+      drawer: DrawerWidget(),
     );
   }
 }
