@@ -9,7 +9,9 @@ import 'package:flutter_swipe_action_cell/core/cell.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import '../../controllers/cart-price-controller.dart';
 import '../../models/cart-model.dart';
+import 'checkout-screen.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
