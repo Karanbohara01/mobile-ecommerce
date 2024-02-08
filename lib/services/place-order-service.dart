@@ -4,15 +4,14 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../models/order-model.dart';
 import '../screens/user-panel/main-screen.dart';
 import '../utils/app-constant.dart';
+import 'genrate-order-id-service.dart';
 
 void placeOrder({
   required BuildContext context,
