@@ -21,19 +21,45 @@ class _AddProductScreenState extends State<AddProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Product'),
+        title: Text(
+          'Add Product',
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        elevation: 0,
+        backgroundColor: Colors.blue,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
+      body: Container(
+        padding: EdgeInsets.all(36.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             TextFormField(
-              decoration: InputDecoration(labelText: 'Product Name'),
+              decoration: InputDecoration(
+                labelText: 'Product Name',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
+              ),
             ),
             SizedBox(height: 16.0),
             TextFormField(
-              decoration: InputDecoration(labelText: 'Price'),
+              decoration: InputDecoration(
+                labelText: 'Price',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
+              ),
               keyboardType: TextInputType.number,
             ),
             SizedBox(height: 16.0),
@@ -50,11 +76,30 @@ class _AddProductScreenState extends State<AddProductScreen> {
                   _selectedCategory = newValue!;
                 });
               },
-              decoration: InputDecoration(labelText: 'Category'),
+              decoration: InputDecoration(
+                labelText: 'Category',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
+              ),
             ),
             SizedBox(height: 16.0),
             TextFormField(
-              decoration: InputDecoration(labelText: 'Description'),
+              decoration: InputDecoration(
+
+                labelText: 'Description',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(1.0),
+                  borderSide: BorderSide(
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
+              ),
               maxLines: 3,
             ),
             SizedBox(height: 16.0),
