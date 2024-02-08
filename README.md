@@ -1,6 +1,6 @@
 # flutter_application_e_comm
 
-A new Flutter project.
+A new Flutter project.Hello
 
 ## Getting Started
 
