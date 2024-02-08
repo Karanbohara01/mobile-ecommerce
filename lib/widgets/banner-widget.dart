@@ -1,16 +1,14 @@
 // ignore_for_file: file_names, unused_field, avoid_unnecessary_containers, prefer_const_constructors
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:carousel_slider/carousel_controller.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
+
+import '../controllers/banners-controller.dart';
 
 class BannerWidget extends StatefulWidget {
   const BannerWidget({super.key});
-
   @override
   State<BannerWidget> createState() => _BannerWidgetState();
 }
