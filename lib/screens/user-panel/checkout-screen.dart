@@ -12,6 +12,7 @@ import 'package:get/get_core/src/get_main.dart';
 import '../../controllers/cart-price-controller.dart';
 import '../../controllers/get-customer-device-token-controller.dart';
 import '../../models/cart-model.dart';
+import '../../services/place-order-service.dart';
 import '../../utils/app-constant.dart';
 
 class CheckOutScreen extends StatefulWidget {
