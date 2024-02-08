@@ -15,6 +15,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/cart-model.dart';
 import '../../models/product-model.dart';
+import 'cart-screen.dart';
 
 class ProductDetailsScreen extends StatefulWidget {
   ProductModel productModel;
