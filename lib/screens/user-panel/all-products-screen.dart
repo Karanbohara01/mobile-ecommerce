@@ -26,7 +26,7 @@ class AllProductsScreen extends StatelessWidget {
         ),
         backgroundColor: AppConstants.primaryColor,
         title: Text(
-          'All Products',
+          'You May Like This',
           style: TextStyle(color: AppConstants.textColor),
         ),
       ),
@@ -115,7 +115,7 @@ class AllProductsScreen extends StatelessWidget {
                               ),
                             ),
                             footer: Center(
-                              child: Text("PKR: " + productModel.fullPrice),
+                              child: Text("Rs: " + productModel.fullPrice),
                             ),
                           ),
                         ),

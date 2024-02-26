@@ -21,9 +21,9 @@ class WelcomeScreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         centerTitle: true,
-        backgroundColor: AppConstants.secondaryColor,
+        backgroundColor: Color(0x650E09FF),
         title: Text(
-          "Welcome to my app",
+          "Welcome to AK Store",
           style: TextStyle(color: AppConstants.textColor),
         ),
       ),

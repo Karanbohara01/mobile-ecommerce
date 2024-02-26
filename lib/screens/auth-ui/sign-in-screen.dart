@@ -358,7 +358,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     Get.to(() => ForgetPasswordScreen());
                   },
                   child: Text(
-                    "Forget Password?",
+                    "Forget Password? Reset here",
                     style: TextStyle(
                         color: AppConstants.secondaryColor,
                         fontWeight: FontWeight.bold),

@@ -99,7 +99,7 @@ class FlashSaleWidget extends StatelessWidget {
                               children: [
                                 Text(
                                   "Rs ${productModel.salePrice}",
-                                  style: TextStyle(fontSize: 10.0),
+                                  style: TextStyle(fontSize: 10.0,fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(
                                   width: 2.0,

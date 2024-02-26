@@ -28,7 +28,7 @@ class _AllFlashSaleProductScreenState extends State<AllFlashSaleProductScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppConstants.primaryColor,
-        title: Text("All Flash Sale Products"),
+        title: Text("New Arrivals"),
       ),
       body: FutureBuilder(
         future: FirebaseFirestore.instance

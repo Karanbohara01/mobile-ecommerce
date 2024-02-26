@@ -30,7 +30,7 @@ class _AdminMainScreenState extends State<AdminMainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Admin Panel',
           style: TextStyle(
             fontSize: 24,
@@ -46,7 +46,7 @@ class _AdminMainScreenState extends State<AdminMainScreen> {
           child: ListView(
             padding: EdgeInsets.zero,
             children: <Widget>[
-              DrawerHeader(
+              const DrawerHeader(
                 decoration: BoxDecoration(
                   color: Colors.blue,
                 ),

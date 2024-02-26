@@ -162,7 +162,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                   child: TextButton(
                     child: Text(
                       "Confirm Order",
-                      style: TextStyle(color: AppConstants.primaryColor),
+                      style: TextStyle(color: AppConstants.textColor),
                     ),
                     onPressed: () {
                       showCustomBottomSheet();

@@ -68,7 +68,7 @@ class MainScreen extends StatelessWidget {
 
               //heading
               HeadingWidget(
-                headingTitle: "Flash Sale",
+                headingTitle: "New Arrivals",
                 headingSubTitle: "According to your budget",
                 onTap: () => Get.to(() => AllFlashSaleProductScreen()),
                 buttonText: "See More >",
@@ -78,7 +78,9 @@ class MainScreen extends StatelessWidget {
 
               //heading
               HeadingWidget(
-                headingTitle: "All Products",
+                headingTitle: "You May Also Like This",
+
+
                 headingSubTitle: "According to your budget",
                 onTap: () => Get.to(() => AllProductsScreen()),
                 buttonText: "See More >",

@@ -115,7 +115,7 @@ class _AllOrdersScreenState extends State<AllOrdersScreen> {
                                 )
                               : Text(
                                   "Deliverd",
-                                  style: TextStyle(color: Colors.red),
+                                  style: TextStyle(color: Colors.white),
                                 )
                         ],
                       ),
